@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: bizcheck-web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8110:80"
+    restart: always
